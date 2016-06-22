@@ -1,7 +1,7 @@
 import urllib.request
 import json
 from secrets import api_key
-full_url = 'http://api.brewerydb.com/v2/brewery/noGtDY?key=3a30c63d84b7daf9a78560d721b98d17'
+full_url = 'http://api.brewerydb.com/v2/brewery/noGtDY?key={}'.format(api_key)
 
 def api_call(url, path, params):
     # Calculate the full url
